@@ -1,0 +1,185 @@
+
+
+
+
+
+/* ------------------------------ general rules ------------------------------ */
+:root{
+    --heading-font-size:40px;
+    --main-dark: #262A2D;
+    --second-dark:#396387;
+    --second-light:#F9DDD6;
+}
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--main-dark);
+}
+
+section{
+    margin: 100px 0px;
+}
+
+
+/* buttons */
+.btn-cta{
+    border-radius: 30px;
+    padding: 12px 22px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: var(--second-dark);
+    color: var(--second-light);
+    font-weight: 200;
+    transition: 0.8s;
+}
+
+.btn-cta:hover{
+    background-color: var(--second-light);
+    color: var(--second-dark);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+}
+
+/* containers */
+.container{
+
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* ----------------------------- //general rules ---------------------------- */
+
+
+
+
+/* --------------------------------- header --------------------------------- */
+header{
+    min-height: 80px;
+    padding-top: 20px;
+}
+
+header a{
+    color:var(--main-dark);
+    text-transform: uppercase;
+}
+
+.container #branding{
+    float: left;
+    max-width: 150px;
+}
+
+nav ul{
+    float: right;
+    padding-top: 10px;
+}
+
+nav li{
+    display: inline;
+    padding: 0 20px 0 20px;
+
+}
+
+/* -------------------------------- //header -------------------------------- */
+
+
+
+
+
+/* ---------------------------------- hero ---------------------------------- */
+#hero{
+    min-height: 500px;
+}
+
+#hero-inner-left{
+    float: left;
+    width: 500px;
+    padding-left: 10%;
+    padding-right: 2.5%;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 10%;
+}
+
+#hero-inner-left h1{
+    font-size: var(--heading-font-size);
+    font-weight: 600;
+}
+
+#hero-inner-left p{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    max-width: 400px;
+}
+
+#hero-inner-right{
+    float: right;
+    max-width: 800px;
+}
+/* --------------------------------- //hero --------------------------------- */
+
+
+
+
+
+/* -------------------------------- about us -------------------------------- */
+#about-us{
+    width: 80%;
+    margin: auto;
+}
+
+#about-us-inner-left img{
+    max-height: 500px;
+    float: left;
+}
+
+#about-us-inner-right{
+    float: right;
+    max-width: 550px;
+    margin-top: 10%;
+}
+
+#about-us-content{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+/* ------------------------------- //about us ------------------------------- */
+
+
+
+
+/* --------------------------------- gallery -------------------------------- */
+#gallery{
+    height: 80vh;
+}
+
+
+.gallety-conatiner{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(28ch, 1fr));
+    grid-gap: 5px;
+}
+/* -------------------------------- //gallery ------------------------------- */
+
+
+
+
+/* --------------------------------- booking -------------------------------- */
+
+/* -------------------------------- //booking ------------------------------- */
+
+
+
+
+/* ------------------------------- contact us ------------------------------- */
+
+/* ------------------------------ //contact us ------------------------------ */
+
+
+
+
+/* --------------------------------- footer --------------------------------- */
+
+/* -------------------------------- //footer -------------------------------- */
