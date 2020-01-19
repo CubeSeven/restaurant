@@ -13,6 +13,9 @@
 <!-- ------------------------------- styles -------------------------------- -->
         <link rel="stylesheet" href="./resources/reset.css">
         <link rel="stylesheet" href="./resources/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="stylesheet" href="./resources/slick/slick.css">
+        <link rel="stylesheet" href="./resources/slick/slick-theme.css">
 <!-- ------------------------------ //styles ------------------------------- -->
     </head>
 
@@ -27,20 +30,22 @@
 
 <header>
     <div class="container">
-        <div id="branding">
-            <img src="./resources/images/logo.png" alt="">
+        <div id="header-wrapper">
+            <div id="branding">
+                <img src="./resources/images/logo.png" alt="">
+            </div>
+            <!-- nav desktop -->
+            <div id="nav-desktop">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <!-- nav desktop -->
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact us</a></li>
-
-            </ul>
-        </nav>
-
         <!-- nav mobile -->
     </div>
 </header>
@@ -51,15 +56,23 @@
 
 <!-- -------------------------------- hero --------------------------------- -->
 <section id="hero">
-    <div class="hero-conatiner">
+    <div class="hero-container">
         <div id="hero-inner-left">
-            <h1>Lorem ipsum dolor</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing amet consectetur adipisicing amet consectetur adipisicing amet consectetur adipisicing elit. Id, ab?</p>
-            <a href="#" class="btn-cta">see our menu</a>
+            <div id="hero-inner-left-content">
+                <h1>Lorem ipsum dolor</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing amet consectetur adipisicing amet consectetur adipisicing amet consectetur adipisicing elit. Id, ab?</p>
+                <a href="#" class="btn-cta">see our menu</a>
+            </div>
         </div>
+
         <div id="hero-inner-right">
-            <img src="./resources/images/pexels-photo-2403392.jpeg" alt="">
+            <div id="hero-inner-right-content">
+                <img src="./resources/images/eat.svg" alt="">
+            </div>
         </div>
+    </div>
+    <div id="cta-scroll">
+        <a href="#">Learn More <br> <i class="fas fa-chevron-down"></i> </a>
     </div>
 </section>
 <!-- ------------------------------- //hero -------------------------------- -->
@@ -70,15 +83,30 @@
 <!-- ------------------------------ about us ------------------------------- -->
 
 <section id="about-us">
-    <div class="container">
+    <div class="about-us-container">
         <div id="about-us-inner-left">
-            <img src="./resources/images/pexels-photo-3298635.jpeg" alt="">
+            <img src="./resources/images/order.svg" alt="">
         </div>
         <div id="about-us-inner-right">
-            <div id="about-us-content">
                 <h1>About us</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit quidem quo eum eligendi minus. Beatae eveniet minima nesciunt, deleniti sint incidunt amet, totam nam alias voluptates voluptatum? Harum quod debitis quam, saepe, ab, dolorem est voluptatem iure a atque suscipit fugit ullam? Eaque cupiditate ipsum provident neque qui ea enim ipsa eligendi molestiae magni quia incidunt consequuntur sed dolor unde expedita perferendis mollitia totam aperiam explicabo dolorum, modi veniam esse. Recusandae quod eum optio suscipit et iusto asperiores hic nobis.</p>
-            </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit quidem quo eum eligendi minus. Beatae eveniet minima nesciunt, deleniti sint incidunt Beatae eveniet minima nesciunt, deleniti sint incidunt amet, <br><br> Beatae eveniet minima nesciunt, deleniti sint incidunt Beatae eveniet minima nesciunt, deleniti sint incidunt</p>
+                <ul>
+                    <li><div>
+                        <h3><span><i class="fas fa-hand-holding-usd"></i></span>Best Rates</h3>
+                    </div></li>
+                    <li><div>
+                        <h3><span><i class="fas fa-shipping-fast"></i></span>Order Delivery</h3>
+                    </div></li>
+                    <li><div>
+                        <h3><span><i class="fas fa-headset"></i></span>Support Syestem</h3>
+                    </div></li>
+                    <li><div>
+                        <h3><span><i class="fas fa-comments"></i></span>Points & Reviews</h3>
+                    </div></li>
+                    <li><div>
+                        <h3><span><i class="fas fa-hands-helping"></i></span>Business Consultancy</h3>
+                    </div></li>
+                </ul>
         </div>
     </div>
 </section>
@@ -86,12 +114,9 @@
 <!-- ----------------------------- //about us ------------------------------ -->
 
 
-
-
 <!-- ------------------------------- gallery ------------------------------- -->
 
 <section id="gallery">
-    <div class="container">
         <h1>Gallery</h1>
         <div class="gallety-conatiner">
             <div class="gallery-item"><img src="./resources/images/1.jpg" alt=""></div>
@@ -103,7 +128,6 @@
             <div class="gallery-item"><img src="./resources/images/7.jpg" alt=""></div>
             <div class="gallery-item"><img src="./resources/images/8.jpg" alt=""></div>
         </div>
-    </div>
 </section>
 
 <!-- ------------------------------ //galerry ------------------------------ -->
@@ -119,6 +143,22 @@
 </section>
 
 <!-- ------------------------------ //booking ------------------------------ -->
+
+
+<!-- ----------------------------- affiliates ------------------------------ -->
+<secion id="affiliates">
+    <div id="aff-title">
+        <h1>Our Affiliates</h1>
+    </div>
+<div class="gallery-slider">
+    <div class="brand-item"><img src="./resources/images/uber.png" alt=""></div>
+    <div class="brand-item"><img src="./resources/images/deliveroo.png" alt=""></div>
+    <div class="brand-item"><img src="./resources/images/justeat.png" alt=""></div>
+    <div class="brand-item"><img src="./resources/images/foodpanda.png" alt=""></div>
+</div>
+</secion>
+
+<!-- ---------------------------- //affiliates ----------------------------- -->
 
 
 
@@ -146,7 +186,20 @@
 <!-- ------------------------------ //footer ------------------------------- -->
 
 <!-- ------------------------------- scripts ------------------------------- -->
-        <script src="./resources/main.js" async defer></script>
+<script src="./resources/main.js" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./resources/slick/slick.min.js"></script>
+        
+
+        <script>
+            $(document).ready(function(){
+            $('.gallery-slider').slick({
+                setting-name: setting-value
+            });
+            });
+        </script>
 <!-- ------------------------------ //scripts ------------------------------ -->
 
     </body>
